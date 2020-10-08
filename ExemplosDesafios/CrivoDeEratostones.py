@@ -1,4 +1,4 @@
-final = 120
+final = int(input())
 limite = int((final)**0.5)
 
 numeros = list(range(2, final + 1))
