@@ -19,7 +19,7 @@
 # | 5                  | MM = 72 g/mol    |
 # +--------------------+------------------+
 #
-# DICA: Para ler valores tipo float, use int(input()).
+# DICA: Para ler valores tipo inteiro, use int(input()).
 #
 
 # Escreva o programa aqui
