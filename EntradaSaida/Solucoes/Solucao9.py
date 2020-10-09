@@ -1,37 +1,36 @@
-# Idade em Anos, Meses e Dias
+# Aproximação de Stirling
 #
-# Dificuldade: ☆☆☆
+# Dificuldade: ☆☆☆☆
 #
 # Enunciado:
-# Receba a idade do usuário em dias e imprima quantos anos, meses e dias o usuário tem. Desconsidere anos bissextos e
-# considere que todos os meses posuem 30 dias.
+# Em matemática, a aproximação de Stirling é uma aproximação para fatoriais. É uma boa aproximação, levando a
+# resultados precisos (não exatos) mesmo para pequenos valores de n.
 #
-# +--------------------+------------------+
-# | Exemplo de entrada | Exemplo de saída |
-# +--------------------+------------------+
-# | 1500               | Qtd. anos: 4     |
-# |                    | Qtd. meses: 1    |
-# |                    | Qtd. dias: 10    |
-# +--------------------+------------------+
-# | 7400               | Qtd. anos: 20    |
-# |                    | Qtd. meses: 3    |
-# |                    | Qtd. dias: 10    |
-# +--------------------+------------------+
-# | 20000              | Qtd. anos: 54    |
-# |                    | Qtd. meses: 9    |
-# |                    | Qtd. dias: 20    |
-# +--------------------+------------------+
+#        _______   /  n  \ n
+# n! ~ \/ 2 𝜋 n   |  ---  |
+#                  \  e  /
+#
+# Considerando e = 2.7182818 e 𝜋 = 3.1415926, faça um programa que receba o valor de n e imprima seu fatorial
+# aproximado pela fórmula de Stirling.
+#
+# +--------------------+---------------------------+
+# | Exemplo de entrada |      Exemplo de saída     |
+# +--------------------+---------------------------+
+# | 5                  | 5 ! ~ 118.01917312900217  |
+# +--------------------+---------------------------+
+# | 10                 | 10 ! ~ 3598695.9648128385 |
+# +--------------------+---------------------------+
+# | 4                  | 4 ! ~ 23.506175916798625  |
+# +--------------------+---------------------------+
 #
 # DICA: Para ler valores tipo float, use int(input()).
-# DICA: Tente deixar o código o menor possível, serão utilizadas apenas operações básicas.
+# DICA: Esse exercício é para aprender a utilizar parênteses nas equações
 #
 
-idade = int(input('Idade: '))
+# Escreva o programa aqui
 
-ano = int(idade/365)
-mes = int((idade%365)/30)
-dia = int((idade%365)%30)
+n = int(input('Número: '))
 
-print('Qtd. anos:', ano)
-print('Qtd. meses:', mes)
-print('Qtd. dias:', dia)
+factorial =  ((n/2.7182818)**n)*((2*3.1415926*n)**0.5)
+
+print(n,'! ~',factorial)
