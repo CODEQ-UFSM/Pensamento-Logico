@@ -1,36 +1,28 @@
-# Distância
+# Calculadora de Exponenciação
 #
-# Dificuldade: ☆☆
+# Dificuldade: ☆
 #
 # Enunciado:
-# Leia quatro valores reais, os dois primeiros corresponderão às coordenadas X1, Y1 do primeiro ponto P1(X1, Y1). Os
-# dois últimos corresponderão às coordenadas X2, Y2 do segundo ponto P2(X2, Y2). Calcule a distância D entre os dois
-# pontos sabendo que D = √((X2-X1)**2 + (Y2-Y1)**2)
+# Receba dois números reais, num e exp. Imprima o resutado de num elevado na exp potência.
 #
-# +--------------------+-----------------------------------+
-# | Exemplo de entrada |          Exemplo de saída         |
-# +--------------------+-----------------------------------+
-# | 5.0                | A distância é:  5.0               |
-# | 7.0                |                                   |
-# | 9.0                |                                   |
-# | 4.0                |                                   |
-# +--------------------+-----------------------------------+
-# | 2.5                | A distância é:  10.54371850914088 |
-# | 9.6                |                                   |
-# | 8.6                |                                   |
-# | 1                  |                                   |
-# +--------------------+-----------------------------------+
+# +--------------------+--------------------+
+# | Exemplo de entrada |  Exemplo de saída  |
+# +--------------------+--------------------+
+# | 5                  | 5.0 ^ 5.0 = 3125.0 |
+# | 5                  |                    |
+# +--------------------+--------------------+
+# | 25                 | 25.0 ^ 0.5 = 5.0   |
+# | 0.5                |                    |
+# +--------------------+--------------------+
+# | 12                 | 12.0 ^ 2.0 = 144.0 |
+# | 2                  |                    |
+# +--------------------+--------------------+
 #
-# DICA: Para ler valores tipo float, use float(input()).
-# DICA: Você irá precisar calcular raiz quadrada de um valor, se não lembrar como fazê-lo utilizando exponenciação,
-#       pesquise na internet.
+# DICA: Para ler valores tipo float, use int(input()).
 #
 
-X1 = float(input('X1 = '))
-Y1 = float(input('Y1 = '))
-X2 = float(input('X2 = '))
-Y2 = float(input('Y2 = '))
+num = float(input('Número: '))
+exp = float(input('Expoente: '))
+res = num ** exp
 
-D = ((X2 - X1)**2 + (Y2 - Y1)**2)**0.5
-
-print('A distância é: ', D)
+print(num, '^', exp, '=', res)

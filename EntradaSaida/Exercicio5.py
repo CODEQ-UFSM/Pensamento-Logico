@@ -1,6 +1,6 @@
 # Idade em Anos, Meses e Dias
 #
-# Dificuldade: ☆☆☆
+# Dificuldade: ☆☆☆☆☆
 #
 # Enunciado:
 # Receba a idade do usuário em dias e imprima quantos anos, meses e dias o usuário tem. Desconsidere anos bissextos e
@@ -23,7 +23,8 @@
 # +--------------------+------------------+
 #
 # DICA: Para ler valores tipo float, use int(input()).
-# DICA: Tente deixar o código o menor possível, serão utilizadas apenas operações básicas.
+# DICA: Procure na internet sobre a operação módulo/module que possui o símbolo % e retorna o resto da divisão entre
+#       dois números. Ex.: 10%3 -> 1.
 #
 
 # Escreva o programa aqui
