@@ -35,8 +35,6 @@
 # DICA: Para ler valores tipo float, use float(input()).
 #
 
-# Escreva o programa aqui
-
 print('Terreno 1')
 comprimento1 = float(input('Comprimento: '))
 largura1 = float(input('Largura: '))
