@@ -33,31 +33,3 @@
 a = float(input('Lado 1: '))
 b = float(input('Lado 2: '))
 c = float(input('Lado 3: '))
-
-# Primeiro, vamos ordenar os valores em ordem decrescente:
-if a < b:
-    aux = a
-    a = b
-    b = aux
-if b < c:
-    aux = b
-    b = c
-    c = aux
-if a < b:
-    aux = a
-    a = b
-    b = aux
-
-if (a >= b + c):
-    print("Não é possível formar triângulo")
-elif (a * a == b * b + c * c):
-    print("Retângulo")
-elif (a * a > b * b + c * c):
-    print("Obtusângulo")
-elif (a * a < b * b + c * c):
-    print("Acutângulo")
-
-if (a == b and b == c):
-    print("Equilátero")
-elif (a == b or b == c):
-    print("Isóceles")

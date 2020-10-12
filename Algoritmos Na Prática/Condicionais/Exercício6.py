@@ -28,37 +28,3 @@
 # DICA: Para ler valores tipo inteiro, use int(input()).
 # DICA: Não esqueça da variável auxiliar.
 #
-
-A = int(input('A = '))
-B = int(input('B = '))
-C = int(input('C = '))
-opt = input('Crescente ou Decrescente? (Digite C ou D para cada opção): ')
-
-if opt == 'C':
-    if A > B:
-        aux = A
-        A = B
-        B = aux
-    if B > C:
-        aux = B
-        B = C
-        C = aux
-    if A > B:
-        aux = A
-        A = B
-        B = aux
-elif opt == 'D':
-    if A < B:
-        aux = A
-        A = B
-        B = aux
-    if B < C:
-        aux = B
-        B = C
-        C = aux
-    if A < B:
-        aux = A
-        A = B
-        B = aux
-
-print(A, B, C)

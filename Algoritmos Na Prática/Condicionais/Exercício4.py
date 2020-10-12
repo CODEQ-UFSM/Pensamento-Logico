@@ -17,10 +17,3 @@
 #
 # DICA: Para ler valores tipo inteiro, use int(input()).
 #
-
-num = int(input('Digite um número:'))
-
-if(num % 13 == 0):
-    print('É divisível por 13')
-else:
-    print('Não é divisível por 13')

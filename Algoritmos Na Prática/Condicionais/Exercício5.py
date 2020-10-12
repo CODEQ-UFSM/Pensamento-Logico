@@ -17,10 +17,3 @@
 #
 # DICA: Para ler valores tipo float, use float(input()).
 #
-
-num = float(input('Número: '))
-
-if num<0:
-    num = -1 * num
-
-print('Valor absoluto:', num)
