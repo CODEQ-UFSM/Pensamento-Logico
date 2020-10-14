@@ -1,4 +1,4 @@
-# Repetição Triangular
+# Repetição Exponencial Triangular
 #
 # DICA: Para que um print não quebre a linha (lêe-se: "dar um enter"), é preciso escrever print('texto aqui', end=' ')
 #       onde o end indica como o print deve terminar.
