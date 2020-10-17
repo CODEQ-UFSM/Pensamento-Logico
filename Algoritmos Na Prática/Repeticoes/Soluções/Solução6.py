@@ -30,15 +30,15 @@
 #
 
 n = int(input('Digite um número: '))
-qtd_primos = 0
+qtd_div = 0
 
 print(n,'é divisível por:')
 for i in range(1,n+1):
     if n%i == 0:
         print(i)
-        qtd_primos += 1
+        qtd_div += 1
 
-if qtd_primos == 2:
+if qtd_div == 2:
     print(n,'é primo.')
 else:
     print(n, 'não é primo.')

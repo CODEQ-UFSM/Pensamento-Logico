@@ -4,10 +4,10 @@
 
 vetor = []
 
-print('Digite 0 quando quiser parar!')
+print('Digite n <= 0 quando quiser parar!')
 
 idade = int(input())
-while idade != 0:
+while idade <= 0:
     vetor.append(idade)
     idade = int(input())
 
