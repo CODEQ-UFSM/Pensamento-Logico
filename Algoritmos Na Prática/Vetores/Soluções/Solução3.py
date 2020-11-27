@@ -7,7 +7,7 @@ vetor = []
 print('Digite',n,'itens')
 
 for i in range(n):
-    idade = input()
-    vetor.append(idade)
+    produto = input()
+    vetor.append(produto)
 
 print(vetor)
